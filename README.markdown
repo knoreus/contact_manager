@@ -1,0 +1,1 @@
+== Simple Contact Manager App for learning Rails
