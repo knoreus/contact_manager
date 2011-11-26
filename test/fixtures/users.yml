@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: Kevin Noreus
+  email: knoreus@gmail.com
+
+two:
+  name: John Doe
+  email: jd@aaa.com
+
+noname:
+  name:
+  email: jd@aaa.com
+
+bademail:
+  name: bad email
+  email:  sdf
