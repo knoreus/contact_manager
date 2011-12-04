@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa20f7c1-2f98-4128-ba2c-551e092fa4d3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
     </list>
     <ignored path="contact_manager.iws" />
@@ -69,7 +68,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="256" selection-end="256" vertical-scroll-proportion="0.41941392">
+            <state line="8" column="12" selection-start="183" selection-end="183" vertical-scroll-proportion="0.23260073">
               <folding />
             </state>
           </provider>
@@ -1115,7 +1114,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="256" selection-end="256" vertical-scroll-proportion="0.41941392">
+        <state line="8" column="12" selection-start="183" selection-end="183" vertical-scroll-proportion="0.23260073">
           <folding />
         </state>
       </provider>
