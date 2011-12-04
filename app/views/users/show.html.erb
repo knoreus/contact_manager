@@ -1,15 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<h3>User Info <%= link_to 'Edit', edit_user_path(@user) %> </h3>
+<div>
   <b>Name:</b>
   <%= @user.name %>
-</p>
+</div>
 
-<p>
+<div>
   <b>Email:</b>
   <%= @user.email %>
-</p>
+</div>
 
+<h4>Contacts <%= link_to "Add", new_contact_path %></h4>
+<% if !@user.contacts.empty? %>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
+    <ul>
+    <% @user.contacts.each do |contact|  %>
+        <li><%= link_to contact.last_name + ', ' + contact.first_name, contact %></li>
+    <% end %>
+    </ul>
+<% end %>
+
 <%= link_to 'Back', users_path %>

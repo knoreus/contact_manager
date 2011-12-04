@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  first_name: John
+  last_name: Jones
+  email: jjones@aol.com
+  address: 123 N st.
+  city: Bozeman
+  state: MT
+  postal_code: 59715
+  home_phone: 406-888-8888
+  mobile_phone: 406-222-2222
+  user: one
+
+two:
+  first_name: Bob
+  last_name: Johson
+  email:
+  address:
+  city:
+  state:
+  postal_code:
+  home_phone:
+  mobile_phone:
+
+three:
+  first_name: Bob
+  last_name: Johson
+  email:
+  address:
+  city:
+  state:
+  postal_code:
+  home_phone:
+  mobile_phone:

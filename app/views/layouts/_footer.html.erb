@@ -1,0 +1,7 @@
+<footer>
+  <% if signed_in? %>
+      <br>
+      Logged in as: <%= current_user_name %>, Not <%= link_to current_user_name, logout_path %>?
+  <% end %>
+  <%= debug(params) if Rails.env.development? %>
+</footer>

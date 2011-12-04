@@ -1,0 +1,52 @@
+<h1>Contacts Details</h1>
+
+
+<fieldset>
+  <legend>Name/Email</legend>
+  <br>
+  <table>
+      <tr>
+        <td class="label">Full Name:</td>
+        <td><%= @contact.full_name %></td>
+      </tr>
+      <tr>
+        <td class="label">Email:</td>
+        <td><%= @contact.email %></td>
+      </tr>
+   </table>
+</fieldset>
+<br>
+<fieldset>
+  <legend>Mailing Address</legend>
+  <br>
+  <table>
+      <tr>
+        <td class="label">Address:</td>
+        <td><%= @contact.address %></td>
+      </tr>
+      <tr>
+        <td class="label">City, State Zip:</td>
+        <td><%= !@contact.city.empty? ? "#{@contact.city}, #{@contact.state} #{@contact.postal_code}" : ""  %></td>
+      </tr>
+   </table>
+</fieldset>
+<br>
+<fieldset>
+  <legend>Phone</legend>
+  <br>
+  <table>
+      <tr>
+        <td class="label">Home:</td>
+        <td><%= @contact.home_phone %></td>
+      </tr>
+      <tr>
+        <td class="label">Mobile:</td>
+        <td><%= @contact.mobile_phone  %></td>
+      </tr>
+   </table>
+</fieldset>
+<br><br>
+
+<div><%= link_to "Edit", edit_contact_path(@contact) %></div>
+<div><%= link_to "Copy", "/contacts/#{@contact.id}/copy" %></div>
+<div><%= link_to 'Destroy', @contact, confirm: 'Are you sure?', method: :delete %></div>

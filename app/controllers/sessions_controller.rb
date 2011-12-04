@@ -13,6 +13,7 @@ class SessionsController < ApplicationController
 
   def destroy
     logout_user
+    redirect_to root_path
   end
 
   def new

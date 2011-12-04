@@ -7,7 +7,8 @@ class SessionControllerTest < ActionController::TestCase
   end
 
   test "should get create" do
-    post :create, { [:session][:email] => "knoreus@gmail.com"}
+    post :create, :session => { [:email] => "knoreus@gmail.com"}
+
     assert_redirected_to users_path
   end
 

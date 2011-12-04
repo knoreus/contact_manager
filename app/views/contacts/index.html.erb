@@ -1,0 +1,7 @@
+<h1>Contacts for <%= current_user.name %></h1>
+<ul>
+<% @contacts.each do |contact|  %>
+    <li><%= link_to contact.last_name + ', ' + contact.first_name, contact %></li>
+
+<% end %>
+</ul>

@@ -1,8 +1,16 @@
 require 'test_helper'
 
 class UsersControllerTest < ActionController::TestCase
+  include SessionsHelper
+
   setup do
     @user = users(:one)
+    login_user @user
+  end
+
+  teardown do
+    logout_user
+    @user = nil
   end
 
   test "should get index" do
@@ -18,7 +26,7 @@ class UsersControllerTest < ActionController::TestCase
 
   test "should create user" do
     assert_difference('User.count') do
-      post :create, user: @user.attributes
+      post :create, :user => { :email => 'someuser@aolc.com', :name => "some user"}
     end
 
     assert_redirected_to user_path(assigns(:user))

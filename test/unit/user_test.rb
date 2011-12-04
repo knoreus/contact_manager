@@ -40,7 +40,7 @@ class UserTest < ActiveSupport::TestCase
   test "User should be unique by email" do
     user = users(:one)
     new_user = User.create :name => user.name, :email => user.email
-    assert !user.save
+    assert !new_user.save
   end
 
   test "User should respond to password attr" do
